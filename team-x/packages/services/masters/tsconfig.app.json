@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",          // Output directory
+    "module": "commonjs",                       // Keep module as commonjs
+    "moduleResolution": "node",                 // Use node resolution strategy for module imports
+    "types": ["node"],                          // Include node types
+    "emitDecoratorMetadata": true,              // Emit decorator metadata for NestJS
+    "experimentalDecorators": true,             // Enable experimental decorators
+    "target": "es2021",                         // Target ES2021 for modern features
+    "declaration": true,                        // Emit type declaration files
+    "declarationMap": true                      // Enable source maps for declarations
+  },
+  "exclude": [
+    "jest.config.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ],
+  "include": ["src/**/*.ts"]
+}
