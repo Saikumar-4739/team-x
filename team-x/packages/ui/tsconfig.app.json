@@ -2,9 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "rootDir": "../../",  // Set to a higher-level directory
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "types": [
       "node",
-
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts"
     ]

@@ -1,13 +1,19 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from '../basic-layout/employee-layout';
+import EmployeePanel from 'src/basic-layout/all-components';
 
-import NxWelcome from './nx-welcome';
 
-export function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <NxWelcome title="ui" />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/employee-panel/*" element={<EmployeePanel />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
-}
+};
 
 export default App;

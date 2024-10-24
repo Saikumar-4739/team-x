@@ -1,13 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 
-import { AppService } from './app.service';
-
-@Controller()
+@ApiTags('example')
+@Controller('example')
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
   @Get()
-  getData() {
-    return this.appService.getData();
+  @ApiResponse({ status: 200, description: 'Successful response.' })
+  getExample() {
+    return { message: 'Hello from the Swagger API!' };
   }
 }
