@@ -20,6 +20,7 @@ const menuItems = [
   { key: 'payslips', icon: <FileSearchOutlined />, label: 'Pay slips', path: '/employee-panel/payslips' },
   { key: 'feedback', icon: <FileDoneOutlined />, label: 'Feedback', path: '/employee-panel/feedback' },
   { key: 'training-development', icon: <ExperimentOutlined />, label: 'Development', path: '/employee-panel/training-development' },
+  { key: 'hr-panel', icon: <ExperimentOutlined />, label: 'hr-panel', path: '/employee-panel/hr-panel' },
 ];
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
