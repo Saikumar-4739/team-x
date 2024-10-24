@@ -5,6 +5,7 @@ import EmployeeDetails from 'src/components/pages/employee-panel/employee-profil
 import Feedback from 'src/components/pages/employee-panel/feedback';
 import Payslip from 'src/components/pages/employee-panel/pay-slips-page';
 import Timesheet from 'src/components/pages/employee-panel/time-sheet-page';
+import HRPanel from 'src/components/pages/hr-panel/hr-panel-page';
 
 
 const EmployeePanel: React.FC = () => {
@@ -16,6 +17,8 @@ const EmployeePanel: React.FC = () => {
         <Route path="timesheet" element={<Timesheet />} />
         <Route path="payslips" element={<Payslip />} />
         <Route path="feedback" element={<Feedback />} />
+        <Route path="hr-panel" element={<HRPanel />} />
+        
       </Routes>
     </div>
   );
